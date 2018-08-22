@@ -18,8 +18,8 @@
 
   	{!! Form::open(['url' => 'askquestion/submit','style'=>'margin-top: 40px']) !!}
   	<div class="form-group" >
-    	{{Form::label('questionheading', 'Question Heading')}}
-    	{{Form::text('questionheading', '',['class'=>'form-control','placeholder'=>'Enter Question Heading'])}}
+    	{{Form::label('heading', 'Question Heading')}}
+    	{{Form::text('heading', '',['class'=>'form-control','placeholder'=>'Enter Question Heading'])}}
     </div>
     <div class="form-group">
     	{{Form::label('content', 'Content')}}

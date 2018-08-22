@@ -9,7 +9,7 @@ class MessegesController extends Controller
     public function submit(Request $request)
     {
     	$this->validate($request,[
-    		'questionheading'=>'required',
+    		'heading'=>'required',
     		'content'=>'required',
     		'tags'=>'required'	
     	]);
