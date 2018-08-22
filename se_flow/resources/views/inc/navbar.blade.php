@@ -32,6 +32,14 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    <ul class="navbar-nav mr-auto" style="margin-left: 420px">
+      <li class="nav-item active">
+        <a class="nav-link" href="/login">Login <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/register">Register<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
   </div>
   </div>
 </nav>

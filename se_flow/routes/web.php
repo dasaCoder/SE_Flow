@@ -27,3 +27,13 @@ Route::get('/welcome', function () {
 Route::get('/askquestion', function () {
     return view('askquestion');
 });
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::post('/askquestion/submit','MessegesController@submit');

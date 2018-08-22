@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>This is app</title>
 	<link rel="stylesheet" type="text/css" href="/css/app.css">
+	
 </head>
 <body>
 	@include('inc.navbar')
