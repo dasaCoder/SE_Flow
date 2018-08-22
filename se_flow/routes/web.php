@@ -36,4 +36,6 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/','MessegesController@getQuestions');
+
 Route::post('/askquestion/submit','MessegesController@submit');

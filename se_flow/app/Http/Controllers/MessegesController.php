@@ -25,7 +25,12 @@ class MessegesController extends Controller
     	$question->save();
 
     	//redirect
-    	return redirect('/');
+    	return redirect('/')->with('success','Question Was Submitted');
 
+    }
+
+    public function getQuestions(){
+    	$questions=Question::orderBy('created_at','DESC')->get();
+    	return view('home',compact('questions'));
     }
 }
