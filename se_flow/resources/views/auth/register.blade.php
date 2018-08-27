@@ -10,6 +10,14 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
                         @csrf
+                        
+                        <!-- Validation Alert -->
+                        @if(count($errors)>0)
+                            @foreach($errors->all() as $error)
+                                <div class="alert alert-danger">{{$error}}</div>
+                            @endforeach
+                        @endif
+                        <!--  -->
 
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
@@ -24,6 +32,8 @@
                                 @endif
                             </div>
                         </div>
+
+                        
 
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
@@ -50,7 +60,9 @@
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
+                                <div>Password should have atleast one from uppercase, lowercase and numaric</div>
                             </div>
+                            
                         </div>
 
                         <div class="form-group row">
