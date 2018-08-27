@@ -19,6 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//facebook
+//google
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+//github
+Route::get('auth/{{provider}}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{{provider}}/callback', 'Auth\LoginController@handleProviderCallback');
