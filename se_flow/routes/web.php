@@ -30,3 +30,5 @@ Route::get('auth/{{provider}}/callback', 'Auth\LoginController@handleProviderCal
 Route::get('/addQuestion', function () {
     return view('AddQuestion');
 });
+
+Route::post('/add_questions', 'QuestionsController@add_questions');

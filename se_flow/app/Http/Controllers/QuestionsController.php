@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\QuestionsRequest;
-use App\User;
+//use App\Http\Requests\QuestionsRequest;
+use App\Question;
 use Illuminate\Http\Request;
 
 class QuestionsController extends Controller
 {
-    public function add_questions(QuestionRequest $request)
+    public function add_questions(Request $request)
     {
         $inputs = $request->input();
         $title = $inputs["title"];
@@ -18,13 +18,10 @@ class QuestionsController extends Controller
         $question = new Question();
         $question->question = $ques;
         $question->description = $description;
-        $result = $qusetion->save();
+        $result = $question->save();
 
-        if ($result) {
-            return redirect('/home');
-        } else {
-            return redirect('/register');
-        }
+        dd($result);
+
     }
 
     public function edit(){
