@@ -12,30 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/welcome', function () {
     return view('welcome');
 });
 
+Auth::routes();
 
-Route::get('/askquestion', function () {
-    return view('askquestion');
-});
+Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/','MessegesController@getQuestions');
-
-Route::post('/askquestion/submit','MessegesController@submit');
+//facebook
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
