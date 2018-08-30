@@ -32,3 +32,7 @@ Route::get('/addQuestion', function () {
 });
 
 Route::post('/add_questions', 'QuestionsController@add_questions');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
