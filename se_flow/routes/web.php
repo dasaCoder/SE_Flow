@@ -26,3 +26,13 @@ Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallb
 //github
 Route::get('auth/{{provider}}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{{provider}}/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('/addQuestion', function () {
+    return view('AddQuestion');
+});
+
+Route::post('/add_questions', 'QuestionsController@add_questions');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

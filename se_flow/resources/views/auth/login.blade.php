@@ -60,10 +60,13 @@
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}
                                 </a>
-                                 <a href="{{url('auth/google')}}" class="btn btn-primary">register with google</a>
-                                 <a href="{{url('auth/github')}}" class="btn btn-primary">register with github</a>
+
+
                             </div>
                         </div>
+                        <hr>
+                        <a href="{{url('auth/google')}}" class="btn btn-primary">register with google</a>
+                        <a href="{{url('auth/github')}}" class="btn btn-primary">register with github</a>
                     </form>
                 </div>
             </div>
