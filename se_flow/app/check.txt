@@ -1,0 +1,50 @@
+Janith.H@CL-JanithU MINGW64 ~/desktop/SE_Flow (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        se_flow/check2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Janith.H@CL-JanithU MINGW64 ~/desktop/SE_Flow (master)
+$ git add .
+
+Janith.H@CL-JanithU MINGW64 ~/desktop/SE_Flow (master)
+$ git commit -m "check2"
+[master 8dce653] check2
+ Committer: Janith Herath <Janith.H@CreativeSoftware.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 se_flow/check2.txt
+
+Janith.H@CL-JanithU MINGW64 ~/desktop/SE_Flow (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 323.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/dasaCoder/SE_Flow.git
+   8525dae..8dce653  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Janith.H@CL-JanithU MINGW64 ~/desktop/SE_Flow (master)
+$
+
